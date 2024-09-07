@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bilal Benhamida</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+        color: #224a6e; /* Couleur du texte global */
+      }
+
+      .container {
+        display: flex;
+        padding: 20px;
+      }
+
+      .left-column,
+      .right-column {
+        flex-basis: 50%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .left-column {
+        background-color: #fff;
+      }
+
+      .right-column {
+        background-color: #beebf3; /* Fond Tulipe menthe */
+      }
+
+      h1,
+      h2,
+      p,
+      li {
+        color: #224a6e; /* Couleur Astronaute pour tout le texte */
+      }
+
+      h1 {
+        font-size: 2.5em;
+        margin-left: 60px;
+      }
+
+      h2 {
+        font-size: 1.5em;
+        margin-left: -20px;
+        margin-bottom: 10px;
+        padding: 10px;
+        padding-left: 50px;
+        text-align: left;
+        width: 97%; /* Pleine largeur du fond */
+      }
+
+      .title-white {
+        background-color: #fff; /* Fond blanc pour certains titres */
+      
+      }
+
+      .title-mint {
+        background-color: #beebf3; /* Fond Tulipe menthe pour certains titres */
+        padding-left: 90px;
+    
+      }
+
+      p {
+        line-height: 1.6;
+      }
+
+      .contact-info,
+      .education,
+      .experience,
+      .skills,
+      .qualities,
+      .hobbies {
+        margin-top: 20px;
+      }
+
+      .contact-info ul,
+      .social-links ul,
+      .education ul,
+      .experience ul,
+      .skills ul,
+      .qualities ul,
+      .hobbies ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .contact-info li,
+      .social-links li,
+      .education li,
+      .experience li,
+      .skills li,
+      .qualities li,
+      .hobbies li {
+        margin-bottom: 5px;
+      }
+
+      .social-links li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .social-links a {
+        color: #224a6e;
+        text-decoration: none;
+      }
+
+      .hobbies li {
+        display: flex;
+        align-items: center;
+      }
+
+      .hobbies li i {
+        font-size: 1.5em;
+        margin-right: 10px;
+        color: #224a6e;
+      }
+      img {
+        width: 190px;
+  height: 200px;
+  margin-top: 20px;
+  margin-left: 60px;
+  border: 9px solid #beebf3; /* Bordure de 9px avec couleur #beebf3 */
+  object-fit: cover; /* Ajuste l'image pour couvrir le conteneur tout en préservant les proportions */
+  object-position: center; /* Centre l'image dans le conteneur */
+  image-rendering: -webkit-optimize-contrast; /* Pour les navigateurs WebKit, améliore la qualité des images bitmap */
+  image-rendering: crisp-edges; /* Pour des rendus plus nets sur d'autres navigateurs */
+}
+
+      #pa {
+        margin-left: 60px;
+        margin-top: -30px;
+        font-weight: bold;
+      }
+      div.about p {
+        font-family: 'Arial', sans-serif; /* Police du texte */
+    font-size: 16px; /* Taille du texte */
+    color: #224a6e; /* Couleur du texte */
+    font-weight: 500; /* Poids du texte */
+    text-align: justify; /* Justifier le texte pour une meilleure lisibilité */
+    padding: 10px 32px; /* Ajout de padding autour du texte */
+    margin-top: 15px; /* Espacement supérieur */
+    word-spacing: -2px; /* Réduit l'espacement entre les mots */
+}
+      div.languages {
+        height: 180px;
+      }
+      ul.languages {
+        margin-top: 50px;
+        margin-left: 8px;
+      }
+
+      ul.languages li {
+        margin-bottom: 20px;
+      }
+      div.contact-info{
+        margin-left: 60px;
+        margin-top: 60px;
+      }
+      div.contact-info a {
+
+    color: #224a6e; /* Couleur Astronaute pour tout le texte */
+    text-decoration: none;
+    
+}
+div.contact-info i {
+
+    font-size: 20px;
+    margin-right: 10px; /* Espacement entre l'icône et le texte */
+}
+.contact-info li:first-child {
+    font-weight: bold; /* Rend seulement le premier <li> en gras (celui du téléphone) */
+}
+div.skills {
+        height: 370px;
+      }
+      div.skills ul {
+        margin-top: 30px;
+        margin-left: 40px;
+}
+div.skills ul li {
+  margin-bottom: 22px;
+  font-size: 20px;
+}
+
+div.education  {
+height: 620px;
+}
+div.education ul {
+    margin-top: 50px;
+    margin-left: 70px;
+
+}
+div.qualities {
+height: 230PX;
+}
+div.qualities ul {
+margin-top: 30px;
+margin-left: 40px;
+}
+div.qualities li {
+margin-top: 20px;
+font-size: 19px;
+
+}
+h3{
+    font-size: 22.5px;
+}
+div.hobbies {
+height: 275PX;
+}
+div.hobbies ul {
+    margin-top: 50px;
+    margin-left: 70px;
+
+}
+div.hobbies li {
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 600;
+
+}
+div.experience {
+height: 275PX;
+}
+div.experience ul {
+    margin-top: 50px;
+    margin-left: 70px;
+
+}
+/* Styles for screens 768px or smaller */
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    .left-column,
+    .right-column {
+      flex-basis: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      margin-left: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      padding-left: 20px;
+      width: 100%;
+      margin-left: 0;
+    }
+
+    img {
+      width: 160px;
+      height: 160px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    #pa {
+      margin: 0;
+      text-align: center;
+      font-size: 1.1em;
+    }
+
+    .contact-info,
+    .education,
+    .experience,
+    .about,
+    .languages,
+    .skills,
+    .qualities,
+    .hobbies {
+      margin-left: 0;
+      padding: 0;
+    }
+
+    div.contact-info a {
+      font-size: 0.9em;
+    }
+
+    div.skills ul li,
+    div.qualities li,
+    div.hobbies li,
+    div.education li,
+    div.experience li {
+      font-size: 18px;
+    }
+
+    div.about p {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+
+    div.languages ul,
+    div.skills ul,
+    div.qualities ul,
+    div.hobbies ul,
+    div.education ul,
+    div.experience ul {
+      margin-left: 10px;
+      padding-left: 10px;
+    }
+  }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-column">
+        <img src="image.jpg" alt="" />
+        <h1>Bilal Benhamida</h1>
+        <p id="pa">Développeur web full stack</p>
+        <div class="contact-info">
+          <ul>
+            <li><i class="fas fa-phone"></i> +212 6 55 02 73 14</li>
+            <li><i class="fas fa-envelope"></i> joindre.bilal@gmail.com</li>
+            <li>
+              <i class="fab fa-github"></i>
+              <a href="https://joindre.bilal.github.io/portfolio/"
+                >https://joindre.bilal.github.io/portfolio/</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="education">
+          <h2 class="title-mint">Éducation</h2>
+          <ul>
+            <li>
+              <p>2022-2024</p>
+              <h3>Institut Spécialisé de Technologie Appliquée NTIC.</h3>
+              <p>Technicien spécialisé en développement web.</p>
+            </li>
+            <li>
+              <p>2020-2022</p>
+              <h3>Université d'état de Tambov Russie.</h3>
+              <p>Deuxième année de formation, Médecine dentaire.</p>
+            </li>
+            <li>
+              <p>2018-2019</p>
+              <h3>Groupe scolaire AL IMANIAT Témara.</h3>
+              <p>Baccalauréat option français, Science physique.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="experience">
+          <h2 class="title-mint">Expérience</h2>
+          <ul>
+            <li>
+              <p>Avril 2024-Mai 2024</p>
+              <h3>Développeur web</h3>
+              <p>Stage en tant que développeur web à Geek Land.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-column">
+        <div class="about">
+          <h2 class="title-white">À propos</h2>
+          <p>
+            Je suis un développeur web enthousiaste, toujours à la recherche de
+            nouveaux défis. J'aime relever les challenges liés à la création
+            d'interfaces web intuitives et efficaces. Mon parcours académique
+            m'a permis d'acquérir de solides bases techniques, que je souhaite
+            mettre à profit pour contribuer à des projets ambitieux.
+          </p>
+        </div>
+        <div class="languages">
+          <h2 class="title-white">Langues</h2>
+          <ul class="languages">
+            <li>Arabe</li>
+            <li>Français</li>
+          </ul>
+        </div>
+        <div class="skills">
+          <h2 class="title-white">Compétences</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+            <li>Laravel</li>
+            <li>SQL & NoSQL</li>
+            <li>Gestion de Projet</li>
+            <li>Méthodes Agiles (Scrum)</li>
+          </ul>
+        </div>
+        <div class="qualities">
+          <h2 class="title-white">Qualités</h2>
+          <ul>
+            <li>À l'écoute</li>
+            <li>Responsable</li>
+            <li>Polyvalent</li>
+            <li>Spontané</li>
+          </ul>
+        </div>
+        <div class="hobbies">
+          <h2 class="title-white">Loisirs</h2>
+          <ul>
+            <li><i class="fas fa-futbol"></i> Football</li>
+            <li><i class="fas fa-swimmer"></i> Natation</li>
+            <li><i class="fas fa-gamepad"></i> Gaming</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
